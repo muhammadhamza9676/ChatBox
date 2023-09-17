@@ -4,7 +4,7 @@ import Routes from "./Routes";
 
 function App() {
 
-  axios.defaults.baseURL = 'http://localhost:5000';
+  axios.defaults.baseURL = 'https://chat-box-server-one.vercel.app'; //'http://localhost:5000';
   axios.defaults.withCredentials = true;
 
   return (

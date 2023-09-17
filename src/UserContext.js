@@ -7,8 +7,8 @@ export function UserContextProvider({children}){
     const [username, setUsername] = useState(null);
     const [id, setId] = useState(null);
     useEffect(()=>{
-        axios.get('http://localhost:5000/profile').then(response =>{
-            console.log(response.data);
+        axios.get('https://chat-box-server-one.vercel.app/profile').then(response =>{
+            //console.log(response.data);
             setId(response.data.userId);
             setUsername(response.data.username);
         })
